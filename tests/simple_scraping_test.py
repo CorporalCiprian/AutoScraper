@@ -33,13 +33,10 @@ def run_extraction_test(target_count=3):
 
     scraped_results = []
 
-    print(f"Starting test: Looking for {target_count} OLX ads (ignoring Autovit)...")
+    print(f"Starting test: Looking for {target_count} OLX ads...")
 
     try:
         for link in all_links:
-            # skip Autovit / todo: add autovit scraping
-            if "autovit.ro" in link:
-                continue
 
             print(f"[{len(scraped_results) + 1}/{target_count}] Scraping: {link}")
             ad_data = scrape_ad_details(driver, link)
