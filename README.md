@@ -15,7 +15,7 @@ python -m venv .venv
 
 **Windows:**
 ```bash
-.venv\Scripts\activate'
+.venv\Scripts\activate
 ```
 
 **Mac/Linux:**
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 Crawls search results and saves unique ad URLs to `data/links.json`:
 
 ```bash
-python -m scraper.get_links
+python -m scraper.links_scraper
 ```
 
 ### Extract Data
@@ -46,7 +46,7 @@ python -m scraper.get_links
 Visits the collected URLs to scrape titles, prices, and vehicle attributes:
 
 ```bash
-python -m scraper.run_test
+python -m tests.simple_scraping_test
 ```
 
 ### Selectors
