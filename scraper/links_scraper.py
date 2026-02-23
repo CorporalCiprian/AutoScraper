@@ -59,11 +59,11 @@ def get_olx_links(num_pages):
     # saving the list in a json
     save_links(unique_links)
 
-    print(f"\Extracted {len(unique_links)} unique links.")
+    print(f"Extracted {len(unique_links)} unique links.")
     print("Links saved in data/links.json")
 
     return unique_links
 
 # for testing
 if __name__ == "__main__":
-    get_olx_links(num_pages=2)
+    get_olx_links(num_pages=25)

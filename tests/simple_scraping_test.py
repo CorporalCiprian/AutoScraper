@@ -64,4 +64,4 @@ def run_extraction_test(target_count=3):
 
 
 if __name__ == "__main__":
-    run_extraction_test(target_count=3)
+    run_extraction_test(target_count=1250)

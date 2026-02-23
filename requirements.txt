@@ -1,3 +1,2 @@
 selenium
-ollama
-pandas
+colorama
