@@ -33,24 +33,14 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Extract Links
-
-Crawls search results and saves unique ad URLs to `data/links.json`:
+Crawls search results and saves unique ad URLs to `data/links.json` and outputs the scraped links in `data/scraped_raw_data.json`:
 
 ```bash
-python -m scraper.links_scraper
-```
-
-### Extract Data
-
-Visits the collected URLs to scrape titles, prices, and vehicle attributes:
-
-```bash
-python -m tests.simple_scraping_test
+python -m main
 ```
 
 ### Selectors
-Update the `OLX` dictionary if website classes change.
+Update the `OLX` and `AUTOVIT` dictionaries if websites classes change.
 
 ## Output
 
